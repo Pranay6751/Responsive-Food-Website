@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #6e7d7d;
+
+    /* color: rebeccapurple; */
+}
+
+.box {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+#loginbox::before {
+    content: "";
+    background: url('https://images.unsplash.com/photo-1529539795054-3c162aab037a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9naW58ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#loginbox {
+    position: relative;
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    margin: 100px 100px;
+    /* padding-top: 100px; */
+    border: 2px solid rgb(202, 214, 214);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.form {
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form input {
+    text-align: center;
+    border: 2px solid aqua;
+    border-radius: 30px;
+    background-color: #0b0b0b;
+    width: 200px;
+    height: 30px;
+    transition: all ease-in-out;
+    color: white;
+}
+
+.form input:hover {
+    transition-duration: 0.7s;
+    width: 250px;
+}
+
+.btn {
+    margin: 17px;
+    padding: 2px 20px;
+    border: 2px solid #13c5d4;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #0b0b0b;
+    ;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: none;
+    font-weight: 500;
+
+}

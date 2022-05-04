@@ -1,0 +1,257 @@
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2';
+}
+
+
+/* Smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* css variables */
+:root{
+    --navbar-height:50px
+}
+
+/* Navigation Bar:logo and image */
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    /* justify-content: center; */
+}
+
+/* Logo and image */
+#logo{
+    margin: 0px 30px;
+}
+
+#logo img{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* Navigation Bar:list styling */
+
+#navbar ul{
+    display: flex;
+    
+}
+        /* -->places the content before the navbar */
+#navbar::before{
+    content: "";
+    background-color: rgb(51, 49, 49);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 3px 5px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 1px 15px;
+    text-decoration: none;
+    /* border: 2px solid white; */
+    color: rgb(250, 247, 244);
+    /* background-color: #ebe9de; */
+    border-radius: 15px;
+    font-weight: 700;
+}
+#navbar ul li a:hover{
+   
+
+    background-color: #ebe9de;
+        color: black;
+    
+    /* color: black; */
+    
+}
+
+/* Home styling starts from here */
+#home{
+    /* position: relative; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 4px 200px;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 120px;
+    height: 540px;
+}
+#home::before{
+    content: "";
+    background: url('https://t4.ftcdn.net/jpg/02/28/99/13/240_F_228991311_tJhSaHnuZhelDMGoYUhvdBtZDGK5dwtM.jpg') no-repeat center center/cover;
+    height: 753px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1.5;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* services section styling */
+
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 25px 24px;
+    /* border-radius: 23p; */
+    border-radius: 23px;
+    background-color: #f0eded;
+}
+#services .box img{
+    height: 100px;
+    /* margin auto works only when element is block element and height or width is set */
+    margin: auto;
+    display: block;
+}
+
+/* client sectiion styling starts from here */
+#client-section{
+    position: relative;
+    /* height: 350px; */
+}
+#client-section::before{
+    position: absolute;
+    content: "";
+    background: url('https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height: 130px;
+    width: 130px;
+}
+.client-items{
+    padding: 34px;
+}
+
+
+/* contact section styling starts from here */
+#contact{
+    position: relative;
+    height: 425px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/photos/restaurant-gourmet-food-on-dark-background-picture-id902558446?k=20&m=902558446&s=170667a&w=0&h=-mr8LaG_pKDXhwA5n-jkYeqMsKwUtNdSFIIggfjicu0=') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 34px; */
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid red;
+}
+#contact-box form{
+    width: 40%;
+    /* border-radius: 6px; */
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+    color: white;
+}
+#contact h1{
+    color: white;
+}
+
+
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+.row
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    /* position: relative; */
+    /* width: 49%; */
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+}
+.col{
+    padding: 50px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+    justify-content: center; 
+}
+.buttn {
+    margin: 17px;
+    padding: 2px 20px;
+    border: 2px solid #13c5d4;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #0b0b0b;
+    ;
+    color: white;
+    cursor: pointer;
+}
+.buttn:hover
+{
+    background: none;
+    font-weight: 700;
+
+}

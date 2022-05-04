@@ -1,0 +1,13 @@
+.form input{
+    width: 130px;
+}
+.form input:hover{
+    width: 160px;
+}
+#loginbox{
+    width: 74%;
+    height: 48vh;
+}
+.info{
+    width: 240px;
+}
